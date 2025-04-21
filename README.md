@@ -125,13 +125,13 @@ docker-compose up --build
 docker-compose -f docker-compose.prod.yml up --build
 ```
 
-## Usuario Administrador
+## Usuarios
 
-El sistema incluye un usuario administrador por defecto:
-- Email: `admin@example.com`
-- Contraseña: `password123`
+### Usuario Normal
+Para crear un usuario normal, simplemente registra un usuario con cualquier email que no sea `admin@example.com`. El sistema asignará automáticamente el rol de usuario normal (USER).
 
-Para crear un nuevo usuario administrador, simplemente registra un usuario con el email `admin@example.com`. El sistema asignará automáticamente el rol de administrador.
+### Usuario Administrador
+Para crear un usuario administrador, registra un usuario con el email `admin@example.com`. El sistema asignará automáticamente el rol de administrador (ADMIN) a este usuario.
 
 ## Documentación de la API
 

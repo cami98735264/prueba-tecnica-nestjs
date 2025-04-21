@@ -15,7 +15,7 @@ import { TasksModule } from './tasks/tasks.module';
     }),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
-      useFactory: () => databaseConfig,
+      useFactory: (configService: ConfigService) => databaseConfig(configService),
       inject: [ConfigService],
     }),
     JwtModule.registerAsync({
